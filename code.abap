@@ -1,4 +1,4 @@
-* ALV Objects
+* ALV Objects data def include
 data: gr_salv type ref to cl_salv_table.
 data: gr_container type ref to cl_gui_custom_container.
 class lcl_handle_events definition deferred.
@@ -8,7 +8,7 @@ type-pools : icon.
 constants: c_red    value 1,
            c_yellow value 2,
            c_green  value 3. 
-
+* class include
 class lcl_handle_events definition.
   public section.
     methods:
@@ -36,7 +36,7 @@ endclass.
 end-of-selection.
   perform display_data. 
 
-
+* form include
 form display_data .
 ** Declarations for ALV Functions
   data : gr_functions type ref to cl_salv_functions_list.
